@@ -1,0 +1,31 @@
+package com.company.Collection;
+
+import java.util.HashSet;
+
+/**
+ * @Description:
+ * @Author: xuchen
+ * @Date: 2021/7/14 10:07
+ * @Modified By：
+ */
+public class HashSetDemo2 {
+    public static void main(String[] args) {
+        HashSet<Student> hs = new HashSet<Student>();
+
+        Student s1 = new Student("林青霞",30);
+        Student s2 = new Student("张曼玉",35);
+        Student s3 = new Student("王祖贤",33);
+
+        Student s4= new Student("王祖贤",33);
+
+
+        hs.add(s1);
+        hs.add(s2);
+        hs.add(s3);
+        hs.add(s4);
+        for (Student s : hs) {
+            System.out.println(s.getName()+","+s.getAge());
+
+        }
+    }
+}

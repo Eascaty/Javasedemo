@@ -1,0 +1,273 @@
+
+
+# 7月
+
+https://www.zhihu.com/question/56110328 学习路线
+
+https://www.bilibili.com/video/BV1Wx411f7qN?p=154&spm_id_from=pageDriver过一遍视频
+
+https://www.bilibili.com/video/BV18J411W7cE?p=248&spm_id_from=pageDriver重难点详细版
+
+## 7.7
+
+https://www.bilibili.com/video/BV1Wx411f7qN?p=21 的P17-P57
+
+java的常量、变量，java的数据类型转换，java的运算符，流程控制之选择结构、循环结构
+
+![image-20210713101107152](D:\Users\xuchen\Desktop\image\image-20210713101107152-1630480811979.png)
+
+## 7.8
+
+P58-P119
+
+java的循环嵌套，方法的定义调用重载，数组的定义访问遍历初始化，面向对象的封装，面向对象的继承，成员变量与局部变量的区别，java的访问权限修饰符
+
+
+
+方法重载：在同一个类中的多个方法，他们的方法名相同，参数列表不同。
+
+使用变量遵循“就近原则”，如果局部位置有，就使用。再没有就去本类的成员位置找，再没有就去父类找，没有就报错。
+
+直接写变量名是指向局部变量，this是指向成员变量，super是指向父类变量	
+
+**子类的所有构造方法第一行都有一个默认的super()用来访问父类的无参构造方法。**
+
+类接口数组是引用数据类型(String类)
+
+int[] arr =new int [3];
+
+int[] arr2 = new int[]{1,2,3};
+
+int[] arr3 = {1,2,3}
+
+<img src="C:/Users/hd-xxzx/Desktop/image/image-20210708164429505.png" alt="image-20210708164429505" style="zoom: 50%;" />
+
+**重载就是一句话：同名不同参，返回值无关。**
+
+**覆盖/重写：同名同参**
+
+## 7.9
+
+P120-P138
+
+刷题https://www.bilibili.com/video/BV16V411e7qe?p=2 p1-p5
+
+面向对象的多态，引用类型变量的类型转换，抽象类，final和static关键字，接口特点，object类的特点	
+
+1. Cat cat = new Cat();
+2. ​		Animal animal = new Cat();
+
+**在调用成员变量以及静态方法时，“编译看左边，运行看左边”，即程序编译时创建了一个Animal类型的对象，并且使用new Cat()对于这个Animal对象赋值，但最终得到的还是一个Animal类的对象，只需要看“=”左边的Animal animal即可。**
+
+**但是要调用非静态方法时，由于Animal类的对象是用Cat()来实例化的，这个非静态方法在运行时会被重写，从而输出子类中方法重写后的结果。这就是“编译看左边，运行看右边”。**
+
+**多态只能在继承层次内进行转换；final修饰的方法不能被重写，final不能被继承，final不能与abstract共存**
+
+static 静态修饰的变量，是可修改且会被该类下所有的对象所共享
+
+静态方法中没有对象this,所以不能访问非静态成员
+
+**static关键字**：类初始化的时候加载的，而非静态资源是类new的时候加载的。
+
+**Java静态 方法不能访问 非静态变量**
+
+**抽象类总结规定**
+
+- \1. 抽象类**不能被实例化**，如果被实例化，就会报错，编译无法通过。只有抽象类的非抽象子类可以创建对象。
+- \2. 抽象类中**不一定包含抽象方法**，但是有抽象方法的类必定是抽象类。
+- \3. 抽象类中的抽象方法只是声明，不包含方法体，就是不给出方法的具体实现也就是方法的具体功能。
+- \4. **构造方法，类方法（用 static 修饰的方法）不能声明为抽象方法。**
+- \5. 抽象类的**子类必须给出抽象类中的抽象方法的具体实现，除非该子类也是抽象类。**
+
+## 7.12
+
+
+
+P139-P148
+
+P6-P19
+
+javaBean类重写，Scanner类，String类的判断转换获取功能，stringbuilder和stringbuffer，data和Calendar类，基本类型的包装类，集合的简介
+
+
+
+substring 方法，包头不包尾（返回一个新的字符串，要做一个接收）
+
+<img src="image/image-20210712105133990.png" alt="image-20210712105133990" style="zoom: 80%;" />
+
+<img src="C:/Users/hd-xxzx/Desktop/image/image-20210712104316545.png" alt="image-20210712104316545" style="zoom: 80%;" />
+
+<img src="C:/Users/hd-xxzx/Desktop/image/image-20210712090554963.png" alt="image-20210712090554963" style="zoom: 80%;" />
+
+![image-20210712161706698](D:\Users\xuchen\Desktop\image\image-20210712161706698-1630480811979.png)
+
+collection map list set都是接口；arraylist,hashset,hashmap都是实现类
+
+## 7.13
+
+P148-P153
+
+P20-p36
+
+List集合的特点和应用，ArrayList构造和添加，LinkList集合特有功能，增强for循环和迭代器，泛型简介,Collections工具类的使用，set集合的特点和应用
+
+
+
+![image-20210713111949988](D:\Users\xuchen\Desktop\image\image-20210713111949988-1630480811978.png)
+
+set集合保证元素唯一性依赖:equals（)和hashcode()两个方法，默认调用的是Object类的这两个方法，需要自己重写
+
+
+
+## 7.14
+
+P154-P157
+
+P37-P43
+
+hashset、Linkedhashset、Treeset集合的概述和特点，自然排序、比较排序Comparable的使用，map集合的特点和应用
+
+hashset先比hash值，当hash值相同时比内容。hashset集合整体是数组结构，数组每个位置能存储多个元素，所以每个位置上是链表结构。
+
+
+
+
+
+## 7.15
+
+P158-p164
+
+P44-p56
+
+map集合的遍历获取,Arraylist、HashMap的集合嵌套）。异常的分类trycatch,throws及处理方式,IO流的概述，file类的创建及判断功能。
+
+
+
+![img](D:\Users\xuchen\Desktop\image\20180725145224835)
+
+![img](D:\Users\xuchen\Desktop\image\403938_1447079573733_4F723777B74785B7A07A73C9792B8F6F)
+
+
+
+## 7.16
+
+P165-P180
+
+P57-P64
+
+字符流读数据操作，字符流写数据操作，字符流拷贝文件，字符缓冲流d的用法，模拟用户上传头像案例，反射的基本概念，反射获取构造方法并使用。
+
+拷贝纯文本使用字符流，拷贝图片音频视频等用字节流。
+
+
+
+
+
+## 7.19
+
+P181-P184
+
+（结束，除了多线程和网络编程）
+
+
+
+反射的获取成员方法、成员变量并使用，复习面向对象里Static、final、this、super关键字，复习继承中构造方法访问特点等内容。
+
+<img src="C:/Users/hd-xxzx/Desktop/image/image-20210719135446753.png" alt="image-20210719135446753" style="zoom: 80%;" />
+
+
+
+## 7.20
+
+看了类的成员变量，接口与类之间的关系，多态里调用静态方法与非静态方法的区别，抽象类的特点，常用集合的特点以及遍历方式。
+
+
+
+java语言是强类型语言，支持的类型分为两类：基本类型和引用类型。
+
+基本类型包括boolean类型和数值类型，数值类型有4个整数类型（byte short int long）和2个浮点类型(float double)，1个字符类型（char），1个布尔类型（boolean）。
+
+引用类型包括类、接口和数组类型以及特殊的null类型。
+
+Java标识符由数字，字母和下划线（_），美元符号（$）组成。在Java中是区分大小写的，而且还要求首位不能是数字。最重要的是，Java[关键字](https://baike.baidu.com/item/关键字)不能当作Java标识符。
+
+![image-20210802101307002](D:\Users\xuchen\Desktop\image\image-20210802101307002.png)
+
+变量名称 字节 位数
+
+byte 1 8
+
+short 2 16
+
+int 4 32
+
+long 8 64
+
+float 4 32
+
+double 8 64
+
+char 2 16
+
+boolean 1 8
+
+定义在类中的变量是类的成员变量，可以不进行初始化，Java会自动进行初始化，如果是引用类型默认初始化为null,如果是基本类型例如int则会默认初始化为0
+
+![image-20210720152533409](D:\Users\xuchen\Desktop\image\image-20210720152533409-1630480811979.png)
+
+
+
+局部变量是定义在方法中的变量，必须要进行初始化，否则不同通过编译
+
+被static关键字修饰的变量是静态的，静态变量随着类的加载而加载，所以也被称为类变量
+
+被final修饰的变量是常量
+
+<img src="https://uploadfiles.nowcoder.com/images/20190221/242025553_1550728055483_BA9669C5826A238ACEC0BD86755FA5DB" alt="img"  />
+
+![image-20210720134827689](D:\Users\xuchen\Desktop\image\image-20210720134827689-1630480811999.png)
+
+map键不可以重复，值可以重复
+
+set无序，唯一
+
+![image-20210720143916857](D:\Users\xuchen\Desktop\image\image-20210720143916857-1630480811979.png)
+
+map.keyset（）;获取所有键的值
+
+![image-20210720144702654](D:\Users\xuchen\Desktop\image\image-20210720144702654-1630480812003.png)
+
+Set<Integer>keys = map.keySet();
+
+Iterator<Integer> it = keys.iterator();
+
+while(it.hasNext()){
+
+Integer key = it.next();
+
+Student value = map.get(key);
+
+sout("key:"+key)
+
+}
+
+
+
+## 7.21
+
+P65-p87（视频刷题结束）
+
+
+
+**基本数据类型与引用数据类型进行比较时，引用数据类型会进行拆箱，然后与基本数据类型进行值的比较**
+
+![image-20210721112813681](D:\Users\xuchen\Desktop\image\image-20210721112813681-1630480812016.png)
+
+比较地址时，常量池里取不越界数值一样即为同一对象。new的话地址都不一样
+
+![image-20210721112943325](D:\Users\xuchen\Desktop\image\image-20210721112943325-1630480812016.png)
+
+![image-20210721134056320](D:\Users\xuchen\Desktop\image\image-20210721134056320-1630480812016.png)
+
+
+

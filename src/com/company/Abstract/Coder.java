@@ -11,7 +11,7 @@ public class Coder extends Employee{
     public Coder(String name, double salary, String id) {
         super(name, salary, id);
     }
-
+/*注释哈哈*/
     public Coder() {
     }
 

@@ -1,6 +1,8 @@
 package com.home.BasicConcept;
 
 
+import java.util.Scanner;
+
 /**
  * 字面量
  */
@@ -47,6 +49,25 @@ public class valuedemo1 {
         int a = 10 ;
         System.out.println(a);//10
 
+//        float类型变量
+        float  f = 20F;
+        System.out.println("F"+f);
+
+//        手机价格
+        double price =5299.0;
+        String name = "华为";
+        System.out.println(price+name);
+/*
+*  标识符  由数字、字母、下划线和美元符组成
+* 不能以数字开头
+* 不能是关键字
+* 区分大小写*/
+
+/*键盘录入*/
+        System.out.println("键盘录入test");
+        Scanner sc =new Scanner(System.in);
+        int i = sc.nextInt();
+        System.out.println(i);
 
     }
 

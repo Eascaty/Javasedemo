@@ -1,4 +1,4 @@
-package com.home.BasicConcept;
+package com.home.Basicgrammar;
 
 
 import java.util.Scanner;

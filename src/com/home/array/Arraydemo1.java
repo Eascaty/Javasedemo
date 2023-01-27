@@ -2,7 +2,7 @@ package com.home.array;
 
 
 //数组
-public class array1 {
+public class Arraydemo1 {
     public static void main(String[] args) {
         //    数组初始化
         int [] array  = new int []{11,22,33};

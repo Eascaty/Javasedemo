@@ -17,6 +17,8 @@ public class Arraydemo2 {
         System.out.println(arr[0]);
 
 
+
+
     }
 
 }

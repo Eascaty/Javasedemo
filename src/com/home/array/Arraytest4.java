@@ -17,8 +17,8 @@ public class Arraytest4 {
         **/
 
 //        分析：1.定义数组
-        int[]arr = new int [10];
-        int []arr2 = new int[10];
+        int []arr  =  new int [10];
+        int []arr2 =  new int [10];
 //        2.吧随机数放入数组
 Random r =new Random();
         for (int i = 0; i < arr.length ; i++) {

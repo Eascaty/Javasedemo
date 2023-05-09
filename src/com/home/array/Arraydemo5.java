@@ -23,7 +23,14 @@ public class Arraydemo5 {
 //        当循环结束后，max记录的就是最大值
         System.out.println(max);
 
+int [] arr1 = {33,44,56,7,3};
+int max2 = arr [0];
 
+for ( int i = 0; i < arr.length;i++){
+        if(arr[i] > max2 ){
+            max2 = arr[i];
+        }
+}
 //       求最小值
         int min = arr[0];
         for (int i = 0; i < arr.length; i++) {

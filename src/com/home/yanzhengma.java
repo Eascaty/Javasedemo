@@ -7,7 +7,7 @@ import java.util.Random;
  * @date: 2023/5/14 15:27
  * @description:
  */
-public class test {
+public class yanzhengma {
     public static void main(String[] args) {
 /*        需求：
         定义方法实现随机产生一个5位的验证码
